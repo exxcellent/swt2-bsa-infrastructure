@@ -1,11 +1,11 @@
 ### DEFINE PROJECT CONFIGURATION ###
 
 # Git repositories
-FRONTEND_REPOSITORY="https://github.com/andre-lehnert/mock-frontend.git"
-BACKEND_REPOSITORY="https://github.com/andre-lehnert/mock-backend.git"
+FRONTEND_REPOSITORY="https://github.com/exxcellent/swt2-bsa-frontend.git"
+BACKEND_REPOSITORY="https://github.com/exxcellent/swt2-bsa-backend.git"
 
 # MAVEN ARTIFACT
-BACKEND_JAR_FILE="example.jar"
+BACKEND_JAR_FILE="bogenliga-application.jar"
 
 
 ### DO NOT EDIT ###
