@@ -1,0 +1,21 @@
+### DEFINE PROJECT CONFIGURATION ###
+
+# Git repositories
+FRONTEND_REPOSITORY="https://github.com/andre-lehnert/mock-frontend.git"
+BACKEND_REPOSITORY="https://github.com/andre-lehnert/mock-backend.git"
+
+# MAVEN ARTIFACT
+BACKEND_JAR_FILE="example.jar"
+
+
+### DO NOT EDIT ###
+
+PROJECT_DIRECTORY="project"
+FRONTEND_DIRECTORY="$PROJECT_DIRECTORY/frontend"
+BACKEND_DIRECTORY="$PROJECT_DIRECTORY/backend"
+BACKEND_PROJECT_DIRECTORY="$BACKEND_DIRECTORY/bogenliga/bogenliga-application"
+BACKEND_PROJECT_JAR_FILE="bogenliga-application-1.0.0.jar"
+
+DOCKER_DIRECTORY="docker"
+DOCKER_FRONTEND_DIRECTORY="$DOCKER_DIRECTORY/frontend/staging/web"
+DOCKER_BACKEND_DIRECTORY="$DOCKER_DIRECTORY/backend/staging"

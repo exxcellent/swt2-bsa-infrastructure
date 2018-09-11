@@ -1,0 +1,49 @@
+version: '3.2'
+
+# Create appication and development services
+services:
+
+### APPLICATION SERVICES ###
+      
+ ## Frontend service
+ ## Open: http://localhost/
+ frontend:
+   container_name: frontend
+   build: ./frontend
+   ports:
+     - "80:80"
+           
+ ## Backend service
+ ## Open: http://localhost:8080/
+ ## Open: http://localhost:8081/actuator/health
+ ## Open: http://localhost:8081/actuator/info
+ backend:
+   container_name: backend
+   build: ./backend
+   ports:
+     - "8080:9000"
+     - "8081:9001"
+   depends_on:
+     - db
+    
+ ## The database starts automatically with Docker
+ ## The ./db/Dockerfile creates the databases and users
+ db:
+   container_name: db
+   build: ./db
+   ports:
+     - "5432:5432"
+   restart: always
+ 
+ 
+### DEVELOPMENT SERVICES ###
+      
+ ## Image: https://hub.docker.com/r/thajeztah/pgadmin4/
+ ## Open: http://localhost:5050/
+ pgadmin:
+   container_name: pgadmin
+   image: thajeztah/pgadmin4:3.0
+   ports:
+     - "5050:5050"
+   depends_on:
+    - db

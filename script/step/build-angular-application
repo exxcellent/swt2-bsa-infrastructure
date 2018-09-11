@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "==> Building angular application..."
+
+frontendProjectName=$(ls "$1")
+frontendProjectDirectory="$1/$frontendProjectName"
+
+cd $frontendProjectDirectory
+ng build --prod

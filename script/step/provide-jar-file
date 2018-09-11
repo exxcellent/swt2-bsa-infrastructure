@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# $1 := backend project directory
+# $2 := backend maven artefact (jar file)
+# $3 := docker backend directory
+
+echo "==> Provide Java application..."
+
+backendTargetFile="$1/target/$2"
+
+echo $backendTargetFile
+
+dockerFile="$3/backend.jar"
+
+rm -f  $dockerFile
+
+cp $backendTargetFile $dockerFile

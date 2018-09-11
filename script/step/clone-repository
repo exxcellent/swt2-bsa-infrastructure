@@ -1,0 +1,6 @@
+#!/bin/sh
+
+[[ -d "$2" ]] || {
+  echo "==> Cloning git repository... $1"
+  git clone "$1" "$2"
+}

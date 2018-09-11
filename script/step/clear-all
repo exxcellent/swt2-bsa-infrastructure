@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "==> Clearing all projects..."
+
+rm -rf project/frontend
+rm -rf project/backend
+
+echo "==> Clearing all staging directories..."
+
+rm -rf docker/frontend/staging/dist
+rm -f docker/backend/staging/*.jar
