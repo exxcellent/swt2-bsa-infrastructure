@@ -23,4 +23,4 @@ script/step/clone-repository $FRONTEND_REPOSITORY $FRONTEND_DIRECTORY
 script/step/clone-repository $BACKEND_REPOSITORY $BACKEND_DIRECTORY
 
 # Run npm install
-script/step/install-node-packages $FRONTEND_DIRECTORY
+#script/step/install-node-packages $FRONTEND_DIRECTORY
