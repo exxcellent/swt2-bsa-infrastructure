@@ -19,3 +19,4 @@ script/update.sh
 #echo "==> Starting docker..."
 #cd $DOCKER_DIRECTORY
 #docker-compose up --build -d
+read -p "Press enter to continue"
