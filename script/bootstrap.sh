@@ -18,6 +18,11 @@ script/step/check-tools npm "Node Package Manager (NPM)" https://www.npmjs.com/g
 script/step/check-tools docker "Docker" https://www.docker.com/community-edition
 script/step/check-tools docker-compose "Docker-Compose" https://docs.docker.com/compose/install/
 
+# Set git config
+echo "==> Configure git..."
+git config --global core.autocrlf input
+git config --global pull.rebase true
+
 # Clone repositories
 script/step/clone-repository $FRONTEND_REPOSITORY $FRONTEND_DIRECTORY
 script/step/clone-repository $BACKEND_REPOSITORY $BACKEND_DIRECTORY
