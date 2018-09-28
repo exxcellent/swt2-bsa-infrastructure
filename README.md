@@ -20,3 +20,12 @@ Run `script/reset.sh` to delete all generated files(!)
 - migrate database
 - start dev mode (only start database)
 - fix file permissions
+
+## Resources
+
+- Angular Tutorial: https://angular.io/tutorial 
+- Bootstrap W3 Schools: https://www.w3schools.com/bootstrap4/default.asp 
+- Flexbox: http://grochtdreis.de/schulungen/html5days-2018-1/flexbox-praxis/index.html#/ 
+- Redux: https://redux.js.org/basics 
+- Icons: https://material.io/tools/icons/?style=baseline 
+- Jasmin and Karma: https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/ 
