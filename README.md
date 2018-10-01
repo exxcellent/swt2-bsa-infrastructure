@@ -28,5 +28,4 @@ Run `script/reset.sh` to delete all generated files(!)
 - Flexbox: http://grochtdreis.de/schulungen/html5days-2018-1/flexbox-praxis/index.html#/ 
 - Redux: https://redux.js.org/basics 
 - Icons: https://material.io/tools/icons/?style=baseline 
-- Jasmin and Karma: https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/ 
-- Router Testing: https://medium.com/burak-tasci/using-jasmine-framework-to-test-angular-router-b568a232efed
+- Jasmin and Karma: https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/
