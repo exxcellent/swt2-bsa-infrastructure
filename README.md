@@ -29,3 +29,4 @@ Run `script/reset.sh` to delete all generated files(!)
 - Redux: https://redux.js.org/basics 
 - Icons: https://material.io/tools/icons/?style=baseline 
 - Jasmin and Karma: https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/ 
+- Router Testing: https://medium.com/burak-tasci/using-jasmine-framework-to-test-angular-router-b568a232efed
