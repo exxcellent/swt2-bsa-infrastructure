@@ -29,4 +29,5 @@ Run `script/reset.sh` to delete all generated files(!)
 - Redux: https://redux.js.org/basics 
 - Icons: https://material.io/tools/icons/?style=baseline 
 - Jasmin and Karma: https://codecraft.tv/courses/angular/unit-testing/jasmine-and-karma/
-- Jasmin and Karma: https://jasmine.github.io/2.0/introduction.html
+- - https://jasmine.github.io/2.0/introduction.html
+- - https://entwickler.de/online/javascript/angular-testing-579793020.html
