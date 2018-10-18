@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "==> Building maven application..."
+
+backendDBMigrationDir=$(ls "$1")
+
+cd $backendDBMigrationDir
+mvn clean flyway:clean flyway:migrate -PLOCAL
