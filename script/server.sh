@@ -21,6 +21,7 @@ echo "Pleas wait. Docker is starting..."
 read -n 1 -s -r -p "Press any key to continue"
 
 echo "==> Setup database..."
+cd ..
 script/step/clean-migrate-db $BACKEND_PROJECT_DB_DIRECTORY
 
 # open browser message
