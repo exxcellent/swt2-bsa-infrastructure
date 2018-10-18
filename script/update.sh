@@ -11,11 +11,11 @@ source script/_config
 script/bootstrap.sh
 
 
-echo "==> Pulling frontend..."
-git -C $FRONTEND_DIRECTORY pull 
+#echo "==> Pulling frontend..."
+#git -C $FRONTEND_DIRECTORY pull 
 
-echo "==> Pulling backend..."
-git -C $BACKEND_DIRECTORY pull 
+#echo "==> Pulling backend..."
+#git -C $BACKEND_DIRECTORY pull 
 
 echo "==> Building frontend..."
 script/step/build-angular-application $FRONTEND_DIRECTORY
