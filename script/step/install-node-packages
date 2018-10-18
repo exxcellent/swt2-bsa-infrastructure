@@ -7,3 +7,5 @@ frontendProjectDirectory="$1/$frontendProjectName"
 
 cd $frontendProjectDirectory
 npm install
+npm install @ngrx/store
+npm install @ngrx/effects
