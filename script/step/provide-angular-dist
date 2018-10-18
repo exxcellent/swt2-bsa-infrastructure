@@ -2,6 +2,7 @@
 
 echo "==> Provide angular application..."
 
+# TODO fix me: do not use ls 
 frontendProjectName=$(ls "$1")
 frontendDistDirectory="$1/$frontendProjectName/dist/$frontendProjectName/*"
 
