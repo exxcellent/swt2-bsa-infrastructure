@@ -5,26 +5,48 @@ services:
 
 ### APPLICATION SERVICES ###
       
- ## Frontend service
+  
+   ## Frontend service
  ## Open: http://localhost/
- frontend:
-   container_name: frontend
-   build: ./frontend
+ frontend-self-contained:
+   container_name: frontend-self-contained
+   build: ./frontend-self-contained
    ports:
-     - "80:80"
-           
- ## Backend service
+     - "4200:4200"
+     
+   ## Frontend service
+ ## Open: http://localhost/
+ ## frontend:
+   ## container_name: frontend
+   ## build: ./frontend
+   ## ports:
+     ## - "80:80"
+          
+    ## Backend service
  ## Open: http://localhost:8080/
  ## Open: http://localhost:8081/actuator/health
  ## Open: http://localhost:8081/actuator/info
- backend:
-   container_name: backend
-   build: ./backend
+ backend-self-contained:
+   container_name: backend-self-contained
+   build: ./backend-self-contained
    ports:
-     - "8080:9000"
-     - "8081:9001"
+     - "9000:9000"
+     - "9001:9001"
    depends_on:
-     - db
+   - db
+   
+    ## Backend service
+ ## Open: http://localhost:8080/
+ ## Open: http://localhost:8081/actuator/health
+ ## Open: http://localhost:8081/actuator/info
+ ## backend:
+   ## container_name: backend
+   ## build: ./backend
+   ## ports:
+     ## - "8080:9000"
+     ## - "8081:9001"
+   ## depends_on:
+     ## - db
     
  ## The database starts automatically with Docker
  ## The ./db/Dockerfile creates the databases and users
