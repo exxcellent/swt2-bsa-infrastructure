@@ -12,7 +12,7 @@ services:
    container_name: frontend-self-contained
    build: ./frontend-self-contained
    ports:
-     - "4200:4200"
+     - "4200:80"
      
    ## Frontend service
  ## Open: http://localhost/
@@ -31,7 +31,7 @@ services:
    build: ./backend-self-contained
    ports:
      - "9000:9000"
-     - "9001:9001"
+  #   - "9001:9001"
    depends_on:
    - db
    
@@ -62,10 +62,10 @@ services:
       
  ## Image: https://hub.docker.com/r/thajeztah/pgadmin4/
  ## Open: http://localhost:5050/
- pgadmin:
-   container_name: pgadmin
-   image: thajeztah/pgadmin4:3.0
-   ports:
-     - "5050:5050"
-   depends_on:
-    - db
+ #pgadmin:
+ #  container_name: pgadmin
+ #  image: thajeztah/pgadmin4:3.0
+ #  ports:
+ #    - "5050:5050"
+ #  depends_on:
+ #   - db
