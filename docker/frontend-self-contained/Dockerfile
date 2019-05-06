@@ -16,6 +16,6 @@ RUN npm install
 # Open 80 port. This is the port that our development server uses
 EXPOSE 8080
 
-RUN $(npm bin)/ng build --prod --configuration=prod
+RUN $(npm bin)/ng build --prod --configuration=production
 
 ENTRYPOINT http-server ./dist/bogenliga --port=8080 -c-1
