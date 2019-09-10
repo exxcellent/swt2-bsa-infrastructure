@@ -11,7 +11,7 @@ services:
    container_name: frontend-self-contained
    build: ./frontend-self-contained
    ports:
-     - "8080:80"
+     - "8484:8484"
 
   ## Backend service
   ## Open: http://localhost:9000

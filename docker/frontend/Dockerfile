@@ -13,8 +13,8 @@ COPY ./staging /usr/src/app/web
 # Set the created directory as the working directory
 WORKDIR /usr/src/app/web
 
-# Open 80 port. This is the port that our development server uses
-EXPOSE 80
+# Open 8484 port. This is the port that our development server uses
+EXPOSE 8484
 
 # Start the http server without caching
-CMD ["http-server", "/usr/src/app/web", "-c-1", "-p80"]
+CMD ["http-server", "/usr/src/app/web", "-c-1", "-p8484"]
