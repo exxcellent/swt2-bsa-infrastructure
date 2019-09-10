@@ -1,0 +1,33 @@
+version: '1.0'
+
+# Create appication and development services
+services:
+
+### APPLICATION SERVICES ###
+
+  ## Frontend service
+ ## Open: http://localhost:8484/
+ frontend:
+   container_name: frontend
+   image: nexus.cs.exxcellent.de:8484/bogenliga-frontend:latest
+   ports:
+     - "8484:8484"
+
+  ## Backend service
+  ## Open: http://localhost:9000
+ backend:
+   container_name: backend
+   image: nexus.cs.exxcellent.de:8484/bogenliga-backend:latest
+   ports:
+     - "9000:9000"
+     - "8081:9001"
+   depends_on:
+     - db
+
+  ## The database starts automatically with Docker
+ db:
+   container_name: db
+   image: nexus.cs.exxcellent.de:8484/bogenliga-db:latest
+   ports:
+     - "5432:5432"
+   restart: always
