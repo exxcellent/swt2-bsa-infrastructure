@@ -14,7 +14,7 @@ services:
      - "8484:8484"
 
   ## Backend service
-  ## Open: http://localhost:9000
+  ## Open: http://localhost:9000/
  backend:
    container_name: backend
    image: nexus.cs.exxcellent.de:8484/bogenliga-backend:latest
