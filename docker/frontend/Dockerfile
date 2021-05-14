@@ -1,5 +1,5 @@
 #  Create a new image from the base nodejs image
-FROM node:10
+FROM node:12
 
 # Instal http server
 RUN npm i -g http-server
